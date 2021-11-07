@@ -1,0 +1,19 @@
+
+    
+    /* cuerpo y logo */
+    body{
+        background-color: $color-principal;
+        
+        .logo{
+                position: absolute;
+                width: 400px;
+                right: 90px;
+                top: 250px;
+        }
+    }
+    /* texto */
+    .texto{
+        &__parrafo{
+            @include fonts();
+        }
+    }
