@@ -11,7 +11,8 @@
 /* Mixins */
 * {
   margin: 0%;
-  padding: 0%; }
+  padding: 0%;
+  padding-bottom: 20px; }
 
 header {
   text-align: center;
@@ -38,9 +39,77 @@ body {
   background-color: #FFDEDE; }
   body .logo {
     position: absolute;
-    width: 400px;
+    width: 600px;
     right: 90px;
-    top: 250px; }
+    top: 500px; }
+  body .map-clean {
+    color: black;
+    background-color: white; }
+  body .map-clean p {
+    color: #7d8285; }
+  body .map-clean h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit; }
+  @media (max-width: 767px) {
+    body .map-clean h2 {
+      margin-bottom: 25px;
+      padding-top: 25px;
+      font-size: 24px; } }
+  body .map-clean .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 40px; }
+  body .map-clean iframe {
+    background-color: white; }
+  body .features-clean {
+    color: #313437;
+    background-color: #FFDEDE;
+    padding-bottom: 30px; }
+  @media (max-width: 767px) {
+    body .features-clean {
+      padding-bottom: 10px; } }
+  body .features-clean p {
+    color: #7d8285; }
+  body .features-clean h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+    padding-top: 40px;
+    color: inherit; }
+  @media (max-width: 767px) {
+    body .features-clean h2 {
+      margin-bottom: 25px;
+      padding-top: 25px;
+      font-size: 24px; } }
+  body .features-clean .intro {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto 60px; }
+  @media (max-width: 767px) {
+    body .features-clean .intro {
+      margin-bottom: 40px; } }
+  body .features-clean .item {
+    min-height: 100px;
+    padding-left: 80px;
+    margin-bottom: 40px; }
+  @media (max-width: 767px) {
+    body .features-clean .item {
+      min-height: 0; } }
+  body .features-clean .item .name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: inherit; }
+  body .features-clean .item .description {
+    font-size: 15px;
+    margin-bottom: 0; }
+  body .features-clean .item .icon {
+    font-size: 40px;
+    color: #1485ee;
+    float: left;
+    margin-left: -65px; }
 
 /* texto */
 .texto__parrafo {
