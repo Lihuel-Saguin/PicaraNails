@@ -37,6 +37,14 @@ header{
     }
 }
 
+@media screen and (max-width: 420px) {
+    img{
+        display: block;
+        margin: auto;
+        width: 390px;
+    }
+}
+
 
 
 .principal{
@@ -53,5 +61,8 @@ header{
     color: $color-texto;
 }
 
-
+img{
+    display: block;
+    margin: auto;
+}
 
