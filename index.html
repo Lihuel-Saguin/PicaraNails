@@ -59,24 +59,38 @@
         <div class="clearfix"></div>
     <main>
     <!-- Carrousel -->
-        <h2> Bienvenidos </h2>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-12">
-                            <div class="carousel-item active"> <img class="d-block w-100" alt="Carousel Bootstrap Third" src="./imagenes/banner-promocion-2x1_23-2148706689.jpg" />
-                                <div class="carousel-caption">
-                                    <h4 class="texto__banner"> PROMOCION DICIEMBRE 2021 </h4>
-                                    <p class="descripcion__banner">Con la compra de cualquier servicio, podes llevar un 2x1. Valido hasta enero</p>
-                                </div>
-                            </div>
-                    </div>
+        <section>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="https://i.ytimg.com/vi/gbQgw6g3PCM/maxresdefault.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.eluniversal.com.mx/sites/default/files/2021/01/29/nail_art_2021_1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://nottinghamcollege.imgix.net/heros/NoCo-Images/11-Course-Banners/HairBeautyNails01.jpg?auto=compress%2Cformat&crop=focalpoint&fit=crop&fp-x=0.5&fp-y=0.5&h=628&q=80&w=1260&s=22f0f79d4e2b6ea712f72fd6a0c08289" class="d-block w-100" alt="...">
+                </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
             </div>
-        </div>
+        </section>
     <!-- End Carrousel -->
-
     <div class="py-5" id="venue">
         <div class="container">
+            <h2> Cual es nuestro objetivo </h2>
             <div class="row bg-primary animate-in-down">
                 <div class="p-4 col-md-6 align-self-center text-color">
                     <h2>Amor por lo que hacemos</h2>
