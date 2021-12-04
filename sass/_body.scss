@@ -1,5 +1,4 @@
 
-    
     /* cuerpo y logo */
     body{
         background-color: $color-principal;
@@ -10,81 +9,47 @@
                 right: 90px;
                 top: 150px;
         }
+        /* MAPA */
         .map-clean {
             color: $color-texto;
             background-color: $color-maps;
-        }
-        
-        .map-clean p {
-            color: #7d8285;
-        }
-        
-        .map-clean h2 {
-            font-weight: bold;
-            margin-bottom: 40px;
-            padding-top: 40px;
-            color: inherit;
-        }
-        
-        @media (max-width:767px) {
-            .map-clean h2 {
-            margin-bottom: 25px;
-            padding-top: 25px;
-            font-size: 24px;
+            .map-clean p {
+                color: #7d8285;
+                .map-clean h2 {
+                    font-weight: bold;
+                    margin-bottom: 40px;
+                    padding-top: 40px;
+                    color: inherit;
+                    .map-clean .intro {
+                        font-size: 16px;
+                        max-width: 500px;
+                        margin: 0 auto 40px;
+                        .map-clean iframe {
+                            background-color: $color-maps;
+                        }
+                    }
+                }
             }
         }
-        
-        .map-clean .intro {
-            font-size: 16px;
-            max-width: 500px;
-            margin: 0 auto 40px;
-        }
-        
-        .map-clean iframe {
-            background-color: $color-maps;
-        }
-    
-    
+
+        /* Iconos */
         .features-clean {
             color: #313437;
             background-color: $color-principal;
             padding-bottom: 30px;
-        }
-        
-        @media (max-width:767px) {
-            .features-clean {
-            padding-bottom: 10px;
-            }
-        }
-        
-        .features-clean p {
-            color: #7d8285;
-        }
-        
-        .features-clean h2 {
-            font-weight: bold;
-            margin-bottom: 40px;
-            padding-top: 40px;
-            color: inherit;
-        }
-        
-        @media (max-width:767px) {
-            .features-clean h2 {
-            margin-bottom: 25px;
-            padding-top: 25px;
-            font-size: 24px;
-            }
-        }
-        
-        .features-clean .intro {
-            font-size: 16px;
-            max-width: 500px;
-            margin: 0 auto 60px;
-        }
-        
-        @media (max-width:767px) {
-            .features-clean .intro {
-            margin-bottom: 40px;
+            .features-clean p {
+                color: #7d8285;
+                .features-clean h2 {
+                    font-weight: bold;
+                    margin-bottom: 40px;
+                    padding-top: 40px;
+                    color: inherit;
+                    .features-clean .intro {
+                        font-size: 16px;
+                        max-width: 500px;
+                        margin: 0 auto 60px;
+                    }
+                }
             }
         }
         
@@ -93,13 +58,6 @@
             padding-left: 80px;
             margin-bottom: 40px;
         }
-        
-        @media (max-width:767px) {
-            .features-clean .item {
-            min-height: 0;
-            }
-        }
-        
         .features-clean .item .name {
             font-size: 20px;
             font-weight: bold;
@@ -120,24 +78,20 @@
             margin-left: -65px;
             
         }
-    }
-    /* texto */
+}
+    
+/* texto */
     .texto{
         &__parrafo{
             @include fonts();
         }
     }
 
-    h2{
-        text-align: center;
-    }
+/* Card */
+h2{
+    text-align: center;
+}
+.text-color {
+    color: #fff
+}
 
-
-
-    .text-color {
-        color: #fff
-    }
-    
-    .carousel-item img {
-        height: 500px
-    }

@@ -1,3 +1,7 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
 header{
     text-align: center;
     background: linear-gradient(to top, #ff5858, #f857a6);
@@ -20,6 +24,53 @@ header{
         }
     }
 }
+
+/* Logo y banner */
+.principal{
+&__logo{
+    @extend %logo
+    }
+}
+
+.texto__banner{
+    color: $color-texto;
+    .descripcion__banner{
+        color: $color-texto;
+    }
+}
+
+/* Imagen principal */
+img{
+    display: block;
+    margin: auto;
+}
+
+.photo-gallery {
+    color: $color-texto;
+    background-color: $color-principal;
+    .photo-gallery h2 {
+        font-weight: bold;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        color: inherit;
+        .photo-gallery .intro {
+            font-size: 16px;
+            max-width: 500px;
+            margin: 0 auto 40px;
+            .photo-gallery .intro p {
+            margin-bottom: 0;
+            .photo-gallery .photos {
+                padding-bottom: 20px;
+                .photo-gallery .item {
+                padding-bottom: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 
 
@@ -45,24 +96,44 @@ header{
     }
 }
 
-
-
-.principal{
-&__logo{
-    @extend %logo
+@media (max-width:767px) {
+    .features-clean .item {
+    min-height: 0;
     }
 }
 
-.texto__banner{
-    color: $color-texto;
+@media (max-width:767px) {
+    .features-clean .intro {
+    margin-bottom: 40px;
+    }
 }
 
-.descripcion__banner{
-    color: $color-texto;
+@media (max-width:767px) {
+    .features-clean h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+    }
 }
 
-img{
-    display: block;
-    margin: auto;
+@media (max-width:767px) {
+    .features-clean {
+    padding-bottom: 10px;
+    }
 }
 
+@media (max-width:767px) {
+    .map-clean h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+    }
+}
+
+@media (max-width:767px) {
+    .photo-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+    }
+}
