@@ -79,12 +79,6 @@ img {
     margin: auto;
     width: 390px; } }
 
-@media screen and (max-width: 1024px) {
-  img {
-    display: block;
-    margin: auto;
-    width: 800px; } }
-
 @media (max-width: 767px) {
   .features-clean .item {
     min-height: 0; } }
