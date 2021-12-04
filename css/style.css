@@ -2,18 +2,12 @@
 /* Extend */
 .principal__logo {
   position: absolute;
-  width: 100px;
-  height: 64px;
+  width: 120px;
+  height: 120px;
   left: 0px;
-  top: 0px;
-  border-radius: 100px; }
+  top: 0px; }
 
 /* Mixins */
-* {
-  margin: 0%;
-  padding: 0%;
-  padding-bottom: 20px; }
-
 header {
   text-align: center;
   background: linear-gradient(to top, #ff5858, #f857a6);
@@ -34,14 +28,31 @@ header {
       transition: 1s;
       color: white; }
 
+/* media query  */
+@media screen and (max-width: 520px) {
+  .principal__logo {
+    width: 110px;
+    height: 110px; } }
+
+@media screen and (max-width: 1800px) {
+  .logo {
+    width: 0px;
+    height: 0px; } }
+
+.texto__banner {
+  color: black; }
+
+.descripcion__banner {
+  color: black; }
+
 /* cuerpo y logo */
 body {
   background-color: #FFDEDE; }
   body .logo {
     position: absolute;
-    width: 600px;
+    width: 500px;
     right: 90px;
-    top: 500px; }
+    top: 150px; }
   body .map-clean {
     color: black;
     background-color: white; }
@@ -116,8 +127,57 @@ body {
   text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, cursive; }
 
+body {
+  background-color: #FFDEDE; }
+
+.container-fluid {
+  margin-top: 10px;
+  width: 1200px; }
+
+.carousel-item img {
+  height: 500px; }
+
+h2 {
+  text-align: center; }
+
+.text-color {
+  color: #fff; }
+
+.carousel-item img {
+  height: 400px; }
+
 .Banner__Galeria {
   background-color: #FFDEDE;
   text-align: center;
   border-radius: 50px;
   font-family: 'Bebas Neue', cursive; }
+
+.photo-gallery {
+  color: black;
+  background-color: #FFDEDE; }
+
+.photo-gallery h2 {
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit; }
+
+@media (max-width: 767px) {
+  .photo-gallery h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px; } }
+
+.photo-gallery .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto 40px; }
+
+.photo-gallery .intro p {
+  margin-bottom: 0; }
+
+.photo-gallery .photos {
+  padding-bottom: 20px; }
+
+.photo-gallery .item {
+  padding-bottom: 30px; }

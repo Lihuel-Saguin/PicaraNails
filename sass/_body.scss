@@ -6,9 +6,9 @@
         
         .logo{
                 position: absolute;
-                width: 600px;
+                width: 500px;
                 right: 90px;
-                top: 500px;
+                top: 150px;
         }
         .map-clean {
             color: $color-texto;
@@ -118,6 +118,7 @@
             color: #1485ee;
             float: left;
             margin-left: -65px;
+            
         }
     }
     /* texto */
@@ -125,4 +126,31 @@
         &__parrafo{
             @include fonts();
         }
+    }
+
+    body {
+        background-color: $color-principal
+    }
+    
+    .container-fluid {
+        margin-top: 10px;
+        width: 1200px;
+    }
+    
+    .carousel-item img {
+        height: 500px;
+    }
+
+    h2{
+        text-align: center;
+    }
+
+
+
+    .text-color {
+        color: #fff
+    }
+    
+    .carousel-item img {
+        height: 400px
     }
