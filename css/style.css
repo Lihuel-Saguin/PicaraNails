@@ -31,8 +31,8 @@ header {
 /* media query  */
 @media screen and (max-width: 420px) {
   .principal__logo {
-    width: 80px;
-    height: 110px; } }
+    width: 90px;
+    height: 100px; } }
 
 @media screen and (max-width: 1800px) {
   .logo {
